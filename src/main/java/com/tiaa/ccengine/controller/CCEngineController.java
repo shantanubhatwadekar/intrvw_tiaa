@@ -20,8 +20,6 @@ public class CCEngineController {
     private static final Logger logger = LoggerFactory.getLogger(CCEngineController.class);
     private static final String REQUEST_COUNT_EXCEEDS = "CC Generator can generate at most 100000 numbers per request.";
 
-    CCEngine ccEngine;
-
     @GetMapping
     Collection<CreditCard> generateCreditCardNumbers(@PathVariable String cardtype, @PathVariable int count) throws InstantiationException {
         logger.info("Request received : cardtype : {} , count : {}", cardtype, count);
@@ -36,7 +34,7 @@ public class CCEngineController {
             logger.error(reason);
             throw new ServerWebInputException(reason);
         }
-        ccEngine = CCEngineFactory.INSTANCE.getCCEngine(type);
+        CCEngine ccEngine = CCEngineFactory.INSTANCE.getCCEngine(type);
         if (ccEngine == null) {
             String reason = "Some error occurred while initializing Credit Card Engine instance for card type : " + type;
             logger.error(reason);
