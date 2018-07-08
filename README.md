@@ -7,12 +7,9 @@ Section 2:
 	JDK Version: java version "1.8.0_172"
 
 Section 3 
-a)	Sonar lint / EclEmma scan Snapshot 
-b)	Final Output Snapshot 
-c)	Junit Coverage Snapshot
-Note: (You can link directly to the raw version of an image from your image folder.
-Hence from section 1.1 if your GIT Link is : https://github.com/nescafe2018/intrvw_sq ,
-then you can have the following text in your readme ![SonarLint] (https://github.com/nescafe2018/intrvw_sq/<Link of you image) )
+a)	Sonar lint https://raw.githubusercontent.com/shantanubhatwadekar/intrvw_tiaa/master/CCEngineSonarReport.PNG
+b)	Final Output Snapshot https://raw.githubusercontent.com/shantanubhatwadekar/intrvw_tiaa/master/CCEngineOutput.PNG
+c)	Junit Coverage Snapshot https://raw.githubusercontent.com/shantanubhatwadekar/intrvw_tiaa/master/CCEngineJunitCoverage.PNG
 
 Section 4 
 Licensing 
